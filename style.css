@@ -1,0 +1,146 @@
+body.dark-mode {
+    background-color: #111 !important;
+    color: #f1f1f1 !important;
+  }
+
+  body.light-mode {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* Behind overlay */
+}
+
+.hero-content {
+background-color: rgba(0, 0, 0, 0.5); /* Light black background */
+padding: 30px;
+border-radius: 10px;
+color: #fff;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay stays in all themes */
+  z-index: -1;
+}
+
+  .cta-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 999;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+  }
+
+  .theme-toggle button {
+    padding: 5px 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    color: #28a745;
+  }
+
+  footer {
+    background: #000;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+  }
+
+   input, textarea {
+    background-color: gainsboro !important;
+    color: black !important;
+    border: 1px solid #555;
+  } 
+
+  .gallery-img {
+    width: 100%;
+    height: 300px;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .cta-section {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cta-button-large {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-button-large:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .theme-toggle {
+    padding: 1px 4px;
+    font-size: 0.7rem;
+    border-radius: 20%;
+    margin-right: -6px;
+    margin-top: -3px;
+
+  }
+
+.toggleTheme{
+   margin-right:-6px;
+}
+
+}
