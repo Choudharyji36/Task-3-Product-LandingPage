@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitPulse - Smart Fitness Band</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+  <!-- Toggle buttons -->
+  <div class="theme-toggle">
+    <button class="toggleTheme" onclick="toggleTheme()">🌗</button>
+    <button onclick="toggleLanguage()" title="Toggle Language">🌐</button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop aria-hidden="true">
+        <source src="./3125907-uhd-3840-2160-25fps.mp4" type="video/mp4">
+      </video>
+      
+      <div class="hero-content">
+        <h1 class="display-3 fw-bold" id="hero-title">FitPulse</h1>
+        <p class="lead" id="hero-slogan">Stay Fit. Stay Connected.</p>
+        <button class="cta-button" onclick="location.href='https://rzp.io/l/demo-payment-link'" id="buy-btn">Buy Now</button>
+      </div>
+  </section>
+
+  <!-- Features -->
+  <section class="container py-5 text-center">
+    <h2 class="mb-4" id="feature-heading">Why Choose FitPulse?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-icon mb-3">💓</div>
+        <h5 id="f1-title">Real-time Heart Monitoring</h5>
+        <p id="f1-text">Track your heart rate 24/7.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon mb-3">📱</div>
+        <h5 id="f2-title">Smartphone Sync</h5>
+        <p id="f2-text">Get call & app alerts on your wrist.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon mb-3">💪</div>
+        <h5 id="f3-title">Fitness Tracking</h5>
+        <p id="f3-text">Track steps, calories & workouts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4" id="gallery-heading">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="./fit-plus-smart-watch.webp" class="img-fluid gallery-img" alt="Product 1" />
+      </div>
+      <div class="col-md-4">
+        <img src="./Heart Rate.webp" class="img-fluid gallery-img" alt="Product 2" />
+      </div>
+      <div class="col-md-4">
+        <img src="./Sleep Monitoring.webp" class="img-fluid gallery-img" alt="Product 3" />
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="container my-5 text-center">
+    <h2 id="pricing-heading">Pricing</h2>
+    <div class="card mx-auto mt-4" style="max-width: 400px;">
+      <div class="card-body">
+        <h3 class="card-title">SmartWatch</h3>
+        <p class="card-text">Only ₹1,599</p>
+        <a href="https://rzp.io/l/demo-payment-link" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Call to Action Section -->
+<section class="cta-section text-center py-5">
+  <h2 id="cta-text">Ready to Elevate Your Fitness?</h2>
+  <p id="cta-sub">Join thousands who have transformed their lifestyle with FitPulse.</p>
+  <button class="cta-button-large" onclick="location.href='https://rzp.io/l/demo-payment-link'" id="cta-btn">Join Now</button>
+</section>
+
+  <!-- Contact -->
+  <section class="container py-5" id="contact">
+    <h2 class="text-center mb-4" id="contact-heading">Contact Us</h2>
+    <form action="https://formspree.io/f/your-id" method="POST" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name-placeholder" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email-placeholder" placeholder="Email Address" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="msg-placeholder" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="cta-button" id="send-btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer-text">
+    &copy; 2025 FitPulse. All rights reserved.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
